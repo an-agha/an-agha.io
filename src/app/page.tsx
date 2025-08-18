@@ -3,6 +3,7 @@ import Layout from "./layout";
 import Features from "@/components/landing/Features";
 import About from "@/components/landing/About";
 import WhyUs from "@/components/landing/WhyUs";
+import Modules from "@/components/landing/Modules";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Features />
         <About />
         <WhyUs />
+        <Modules />
     </Layout>
   );
 }
