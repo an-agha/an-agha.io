@@ -29,7 +29,7 @@ function Features() {
         >
             {
                 features.map((item,index) => (
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-6" key={index}>
                         <Icon icon={item.icon} color="#10B981" className="text-xl" />
                         <span className="w-[calc(100%-20px)] text-secondary">
                             {item.content}
