@@ -10,15 +10,15 @@ import Metrics from "@/components/landing/Metrics";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
         <Hero />
-        {/* <Features />
+        <Features />
         <About />
         <WhyUs />
         <Modules />
         <Architecture />
         <Benefits />
-        <Metrics /> */}
-    </Layout>
+        <Metrics />
+    </>
   );
 }

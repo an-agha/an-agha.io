@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${epilogue.variable} ${montserrat.variable} antialiased`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         {/* <Footer /> */}
       </body>
