@@ -4,15 +4,21 @@ import Features from "@/components/landing/Features";
 import About from "@/components/landing/About";
 import WhyUs from "@/components/landing/WhyUs";
 import Modules from "@/components/landing/Modules";
+import Architecture from "@/components/landing/Architecture";
+import Benefits from "@/components/landing/Benefits";
+import Metrics from "@/components/landing/Metrics";
 
 export default function Home() {
   return (
     <Layout>
         <Hero />
-        <Features />
+        {/* <Features />
         <About />
         <WhyUs />
         <Modules />
+        <Architecture />
+        <Benefits />
+        <Metrics /> */}
     </Layout>
   );
 }
