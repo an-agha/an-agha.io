@@ -84,24 +84,25 @@
   --sidebar-ring: oklch(0.708 0 0);
 
 
-    /* PRIMARY: #116734 */
-    --primary: 144 72% 24%;
+  /* PRIMARY: #116734 */
+  --primary: 144 72% 24%;
 
     /* primaryLight #2FB45D */
     --primary-light: 145, 58%, 45%;
 
     --primary-foreground: 147 25% 92%;
 
-    /* SECONDARY: #FF8C8C */
-    --secondary: 0 100% 75%;
+  /* SECONDARY: #FF8C8C */
+  --secondary: 0 100% 75%;
 
-    /* ACCENT: #2FB45D */
-    --accent: 141 59% 45%;
+  /* ACCENT: #2FB45D */
+  --accent: 141 59% 45%;
 
-    --primary-textclr: 0 0% 11%;
-    /* #1D1D1D */
-    --secondary-textclr: 0 0% 3%;;
-    /* #080808 */
+  --primary-textclr: 0 0% 11%;
+  /* #1D1D1D */
+  --secondary-textclr: 0 0% 3%;
+  ;
+  /* #080808 */
 }
 
 .dark {
@@ -144,8 +145,28 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Epilogue', sans-serif;
+  }
+
+  body,
+  p
+  {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button {
+    font-family: 'Figtree', sans-serif;
   }
 
   .main-container {
@@ -154,8 +175,9 @@
     flex-direction: column;
     align-items: center;
   }
+
   .max-container {
     width: 100%;
-    max-width: 1240px; 
+    max-width: 1240px;
   }
 }
