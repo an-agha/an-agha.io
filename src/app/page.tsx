@@ -6,6 +6,7 @@ import WhyUs from "@/components/landing/WhyUs";
 import Modules from "@/components/landing/Modules";
 import Architecture from "@/components/landing/Architecture";
 import Benefits from "@/components/landing/Benefits";
+import Metrics from "@/components/landing/Metrics";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Modules />
         <Architecture />
         <Benefits />
+        <Metrics />
     </Layout>
   );
 }
