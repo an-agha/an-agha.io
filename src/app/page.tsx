@@ -19,6 +19,6 @@ export default function Home() {
         <Architecture />
         <Benefits />
         <Metrics />
-    </Layout>
+    </>
   );
 }
