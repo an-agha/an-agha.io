@@ -16,15 +16,13 @@ function Hero() {
             <div className='relative flex flex-col max-w-[760px] gap-y-[38px] pr-6 lg:pr-10 xl:pr-14 z-50'>
                 <h1 className='text-white text-6xl'>
                     Construction Industry <br />
-                    <span>
+                    <span className='text-primary-light'>
                         Sustainability
                     </span> <br />
-                    <span>
-                        Empowerment
-                        <span>
-                            Platform
-                        </span>
+                    <span className='text-primary-light'>
+                        Empowerment&nbsp;   
                     </span>
+                     Platform
                 </h1>
                 <span className='text-xl text-white'>
                     Blockchain-powered technology that empowers the entire construction industry to achieve sustainability excellence while unlocking carbon credit revenue streams across every project lifecycle

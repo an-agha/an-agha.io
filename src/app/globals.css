@@ -47,7 +47,8 @@
     --color-accent: hsl(var(--accent));
     --color-primary-textclr: hsl(var(--primary-textclr));
     --color-secondary-textclr: hsl(var(--secondary-textclr));
-      --color-primary-foreground: hsl(var(--primary-foreground));
+    --color-primary-foreground: hsl(var(--primary-foreground));
+    --color-primary-light : hsl(var(--primary-light));
 }
 
 :root {
@@ -85,6 +86,9 @@
 
     /* PRIMARY: #116734 */
     --primary: 144 72% 24%;
+
+    /* primaryLight #2FB45D */
+    --primary-light: 145, 58%, 45%;
 
     --primary-foreground: 147 25% 92%;
 
