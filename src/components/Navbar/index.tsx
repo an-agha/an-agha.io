@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
 import Mobile from './Mobile';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { MobileMenu } from './mobile-menu';
 
 type NavPathTypes = {
   title: string,
@@ -55,14 +56,11 @@ function Navbar() {
     >
       <div className="hidden h-[60px] md:flex flex-1 items-center justify-between ">
         <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />
-        <Icon 
-        icon='ci:hamburger-md' 
-        className='md:hidden text-primary text-4xl cursor-pointer'
-         />
+
         {/* <div className="flex flex-1" /> */}
-        <div className="h-[60px] flex gap-[45px] items-center justify-end">
+        <div className="hidden lg:flex h-[60px] gap-[45px] items-center justify-end ">
           {
-            NavPaths?.map((path,index) => (
+            NavPaths?.map((path, index) => (
               <Link href={path?.path} key={index} className={cn("!w-full text-nowrap", scrolled ? 'text-foreground' : 'text-white')}>
                 {path?.title}
               </Link>
@@ -76,7 +74,18 @@ function Navbar() {
 
 
       </div>
-      <Mobile />
+
+      <MobileMenu logo={
+        <Link href="/">
+          <Image
+            src="/images/logos/citech-logo.svg"
+            alt="nomic legal pllc logo"
+            width={40}
+            height={40}
+            priority
+          />
+        </Link>
+      } />
     </nav>
   )
 }
