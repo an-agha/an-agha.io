@@ -1,24 +1,28 @@
 import Image from 'next/image'
 import React from 'react'
-import ModuleCard from "@/components/landing/Modules/Card";
+import ModuleCard from "@/components/landing/Card";
 import { cn } from '@/lib/utils';
 
-interface ModuleCardProps {
-  image: string
-  alt: string
-  title: string
-  list: string[]
-  className: string
+interface ListItem {
+  content: string
 }
 
-const Card: React.FC<ModuleCardProps> = ({ image, alt, title, list, className }) => {
+interface CardProps {
+  title: string
+  list: ListItem[]
+  image: string
+  alt: string
+  className?: string
+}
+
+const Card: React.FC<CardProps> = ({ title, list, image, alt, className }) => {
   return (
     <div className={cn("w-full max-w-[980px] flex flex-col items-center gap-6", className)}>
       <Image
-        src={image}
+        src={image} 
+        alt={alt}
         width={347}
         height={400}
-        alt={alt}
         className="rounded-lg object-cover"
       />
       <ModuleCard title={title} list={list} />

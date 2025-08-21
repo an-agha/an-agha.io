@@ -7,21 +7,50 @@ function index() {
     const moduleLeft = [
         {
             title: 'Supply Chain Empowerment Hub',
+            icon: '',
             list: [
-                'Verified sustainable supplier marketplace and scoring',
-                'Real-time material tracking with blockchain transparency',
-                'Circular economy monitoring engine (waste-to-resource)',
-                'Supplier sustainability performance benchmarking'
+                {
+                    icon: 'tabler:brand-shopee',
+                    content: 'Verified sustainable supplier marketplace and scoring',
+                },
+                {
+                    icon: 'tabler:truck-delivery',
+                    content: 'Real-time material tracking with blockchain transparency',
+                },
+                {
+                    icon: 'tabler:device-analytics',
+                    content: 'Circular economy monitoring engine (waste-to-resource)',
+                },
+                {
+                    icon: 'tabler:graph',
+                    content: 'Supplier sustainability performance benchmarking',
+                },
             ]
         },
         {
             title: 'Carbon Revenue Empowerment',
+            icon: '',
             list: [
-                'Comprehensive carbon accounting across all operations',
-                'Automated carbon credit calculation and verification',
-                'Strategic carbon portfolio management and optimization',
-                'Integration with global carbon trading platforms',
-                'ROI maximization for every sustainability initiative'
+                {
+                    icon: 'akar-icons:leaf',
+                    content: 'Comprehensive carbon accounting across all operations',
+                },
+                {
+                    icon: 'proicons:calculator',
+                    content: 'Automated carbon credit calculation and verification',
+                },
+                {
+                    icon: 'carbon:settings-check',
+                    content: 'Strategic carbon portfolio management and optimization',
+                },
+                {
+                    icon: 'octicon:graph-16',
+                    content: 'Integration with global carbon trading platforms',
+                },
+                {
+                    icon: 'tabler:chart-treemap',
+                    content: 'ROI maximization for every sustainability initiative',
+                },
             ]
         },
     ]
@@ -30,18 +59,39 @@ function index() {
         {
             title: 'Operational Excellence Empowerment',
             list: [
-                'Real-time material utilization monitoring',
-                'Energy and water monitoring with insights',
-                'Health, safety, and environmental performance integration',
-                'Continuous improvement through data-driven insights'
+                {
+                    icon: 'tabler:device-desktop',
+                    content: 'Real-time material utilization monitoring',
+                },
+                {
+                    icon: 'tabler:chart-line',
+                    content: 'Energy and water monitoring with insights',
+                },
+                {
+                    icon: 'tabler:chart-dots',
+                    content: 'Health, safety, and environmental performance integration',
+                },
+                {
+                    icon: 'tabler:chart-pie-3',
+                    content: 'Continuous improvement through data-driven insights',
+                },
             ]
         },
         {
             title: 'Compliance Empowerment Engine',
             list: [
-                'Automated certification pathway management',
-                'Audit-ready documentation with blockchain verification',
-                'Proactive policy change notifications and adaptation',
+                {
+                    icon: 'tabler:file-horizontal',
+                    content: 'Automated certification pathway management',
+                },
+                {
+                    icon: 'pepicons-pop:file',
+                    content: 'Audit-ready documentation with blockchain verification',
+                },
+                {
+                    icon: 'tabler:file-stack',
+                    content: 'Proactive policy change notifications and adaptation',
+                },
             ]
         },
     ]
@@ -70,7 +120,7 @@ function index() {
                         }
                     </div>
                     <Image
-                        src="/images/module-img.jpg"
+                        src="/images/module-img.png"
                         width={333}
                         height={458}
                         alt="module section image"

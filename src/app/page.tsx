@@ -6,6 +6,7 @@ import Modules from "@/components/landing/Modules";
 import Architecture from "@/components/landing/Architecture";
 import Benefits from "@/components/landing/Benefits";
 import Metrics from "@/components/landing/Metrics";
+import Vision from "@/components/landing/Vision";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Architecture />
         <Benefits />
         <Metrics />
+        <Vision />
     </>
   );
 }

@@ -3,8 +3,8 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 interface CardItem {
-  content: string
   subTitle: string
+  listIcon: string
 }
 
 interface CardProps {
@@ -32,13 +32,11 @@ const Card: React.FC<CardProps> = ({ icon, title, bgColor, textClr, list = [] })
       <div className='w-full flex flex-col gap-4'>
         {list.map((item, index) => (
           <div
-            className='w-full bg-[#10B981]/10 flex flex-col items-center p-4 rounded-[8px]'
+            className='w-full flex items-center gap-x-4'
             key={index}
           >
-            <span className={cn('text-3xl font-bold', textClr)}>
-              {item.content}
-            </span>
-            <span className='text-sm text-[#4B5563]'>
+            <Icon icon={item.listIcon} className='text-primary-light text-2xl min-w-6' />
+            <span className='text-secondary-textclr'>
               {item.subTitle}
             </span>
           </div>

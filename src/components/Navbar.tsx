@@ -56,8 +56,8 @@ function Navbar() {
         {/* <div className="flex flex-1" /> */}
         <div className="h-[60px] flex gap-[45px] items-center justify-end">
           {
-            NavPaths?.map(path => (
-              <Link href={path?.path} className={cn("!w-full text-nowrap", scrolled ? 'text-foreground' : 'text-white')}>
+            NavPaths?.map((path,index) => (
+              <Link href={path?.path} key={index} className={cn("!w-full text-nowrap", scrolled ? 'text-foreground' : 'text-white')}>
                 {path?.title}
               </Link>
             ))

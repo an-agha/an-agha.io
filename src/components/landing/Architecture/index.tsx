@@ -4,32 +4,33 @@ import Image from 'next/image'
 
 function Architecture() {
 
-  const CardDetails = [
+   const CardDetails = [
     {
-      image: '/images/architecture/architecture.png',
+      image: '/images/architecture/block-chain.png',
       alt: 'building image',
       title: 'Blockchain Empowerment Network',
       list: [
-        'Immutable sustainability credential for authentication', 
-        'Automated carbon credit transactions',
-        'Transparent multi-party collaboration protocols',
-        'Secure data sharing across ecosystem participants'
+        { content: 'Immutable sustainability credential for authentication' },
+        { content: 'Automated carbon credit transactions' },
+        { content: 'Transparent multi-party collaboration protocols' },
+        { content: 'Secure data sharing across ecosystem participants' },
       ],
       className: 'flex flex-col md:flex-row  md:justify-between'
     },
     {
-      image: '/images/architecture/architecture.png',
+      image: '/images/architecture/iot.png',
       alt: 'building image',
       title: 'IoT Empowerment Layer',
       list: [
-        'Real-time environmental and resource monitoring', 
-        'Equipment efficiency tracking and optimization alerts',
-        'Automated data collection from construction sites',
-        'Remote monitoring and control capabilities',
+        { content: 'Real-time environmental and resource monitoring' },
+        { content: 'Equipment efficiency tracking and optimization alerts' },
+        { content: 'Automated data collection from construction sites' },
+        { content: 'Remote monitoring and control capabilities' },
       ],
       className: 'flex flex-col md:flex-row-reverse  md:justify-between'
     }
   ]
+
 
   return (
     <section className='relative main-container  px-10 lg:px-[100px]'>
