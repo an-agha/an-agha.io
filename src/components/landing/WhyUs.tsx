@@ -5,25 +5,25 @@ function WhyUs() {
 
     const features = [
         {
-            image: '/images/why-us/img1.png',
+            image: '/images/why-us/img1.svg',
             alt: 'Beyond Monitoring image',
             title: 'Beyond Monitoring',
             content: 'Active optimization and intelligent recommendations',
         },
          {
-            image: '/images/why-us/img2.png',
+            image: '/images/why-us/img2.svg',
             alt: 'Beyond Compliance image',
             title: 'Beyond Compliance',
             content: 'Strategic sustainability advantage and market differentiation',
         },
          {
-            image: '/images/why-us/img3.png',
+            image: '/images/why-us/img3.svg',
             alt: 'Beyond Cost image',
             title: 'Beyond Cost',
             content: 'Revenue generation through carbon credit monetization',
         },
          {
-            image: '/images/why-us/img4.png',
+            image: '/images/why-us/img4.svg',
             alt: 'Beyond Individual Orgs image',
             title: 'Beyond Individual Orgs',
             content: 'Ecosystem-wide transformation and collaboration',
@@ -33,8 +33,8 @@ function WhyUs() {
 
   return (
     <section className='main-container relative px-10 lg:px-[100px]'>
-        <div className="max-container flex flex-col items-center gap-10 lg:gap-y-[66px]">
-            <h3 className='text-3xl lg:text-4xl font-bold text-primary-textclr'>
+        <div className="max-container flex flex-col items-center gap-10 lg:gap-y-[66px] z-20">
+            <h3 className='w-full text-3xl lg:text-4xl font-bold text-primary-textclr max-w-[833px]'>
                 Why Empowerment Matters
             </h3>
             <div className='grid grid-cols-1 md:grid-cols-2 max-w-[833px] gap-6 lg:gap-10'>
@@ -69,7 +69,7 @@ function WhyUs() {
         width={274}
         height={274}
         alt='decorative image'
-        className='absolute left-0 max-h-[274px] object-contain object-left bottom-0'
+        className='absolute left-0 w-[50px] lg:w-[274px] max-h-[274px] object-contain object-left bottom-0 z-10'
          />
     </section>
   )

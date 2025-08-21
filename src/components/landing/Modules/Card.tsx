@@ -1,9 +1,14 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
+interface ListItem {
+  icon: string
+  content: string
+}
+
 interface CardProps {
   title: string
-  list: string[]
+  list: ListItem[]
 }
 
 const Card: React.FC<CardProps> = ({ title, list }) => {
@@ -15,9 +20,9 @@ const Card: React.FC<CardProps> = ({ title, list }) => {
       <ul className='flex flex-col gap-3'>
         {list?.map((item, index) => (
           <li className='flex items-center gap-4' key={index}>
-            <Icon icon='streamline:graph-solid' color="#10B981" className="text-xl" />
+            <Icon icon={item.icon || 'octicon:graph-16'} color="#10B981" className="text-xl" />
             <span className='text-secondary-textclr'>
-              {item}
+              {item.content}
             </span>
           </li>
         ))}

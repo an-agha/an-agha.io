@@ -11,57 +11,82 @@ function index() {
             textClr: 'text-[#10B981]',
             cardItem: [
                 {
-                    content: '85%',
-                    subTitle: 'Waste reduction'
+                    listIcon: 'ri:leaf-line',
+                    subTitle: 'Empower proper disposal of construction waste'
                 },
-                 {
-                    content: '70%',
-                    subTitle: 'Carbon footprint decrease'
+                {
+                    listIcon: 'ri:leaf-line',
+                    subTitle: 'Decrease in carbon footprint across project lifecycles'
+                },
+                {
+                    listIcon: 'ri:leaf-line',
+                    subTitle: 'Verified waste recycling economy contribution with measurable impact'
+                },
+                {
+                    listIcon: 'ri:leaf-line',
+                    subTitle: 'Alignment with UN Sustainable Development Goals'
                 },
             ]
         },
          {
             title: 'Economic Impact',
-            icon: 'bxs--dollar-circle',
+            icon: 'fa:dollar',
             bgColor: 'bg-[#059669]',
             textClr: 'text-[#059669]',
             cardItem: [
                 {
-                    content: '$2.5M',
-                    subTitle: 'Carbon credit revenue'
+                    listIcon: 'mdi:dollar',
+                    subTitle: 'Carbon credit revenue generation'
                 },
                  {
-                    content: '25%',
-                    subTitle: 'Property value increase'
+                    listIcon: 'mdi:dollar',
+                    subTitle: 'Enhanced property values through sustainability premiums'
+                },
+                 {
+                    listIcon: 'mdi:dollar',
+                    subTitle: 'Access to green financing at preferential rates'
+                },
+                 {
+                    listIcon: 'mdi:dollar',
+                    subTitle: 'Reduced insurance and operational risk premiums'
                 },
             ]
         },
          {
-            title: 'Innovation Impact',
-            icon: 'bxs:leaf',
+            title: 'Innovation Empowerment',
+            icon: 'fa7-solid:lightbulb',
             bgColor: 'bg-[#10B981]',
             textClr: 'text-[#10B981]',
             cardItem: [
                 {
-                    content: '90%',
-                    subTitle: 'Faster decision-making'
+                    listIcon: 'mage:light-bulb',
+                    subTitle: 'Real-time decision-making with actionable insights'
                 },
-                 {
-                    content: '60%',
-                    subTitle: 'Collaboration improvement'
+                {
+                    listIcon: 'mage:light-bulb',
+                    subTitle: 'Automated optimization recommendations and implementation'
                 },
+                {
+                    listIcon: 'mage:light-bulb',
+                    subTitle: 'Streamlined multi-stakeholder collaboration'
+                },
+                {
+                    listIcon: 'mage:light-bulb',
+                    subTitle: 'Accelerated adoption of emerging sustainability technologies'
+                },
+
             ]
         },
     ]
 
 
   return (
-   <section className='main-container px-10 lg:px-[100px] bg-[#F9FAFB] py-10 lg:py-20'>
+   <section className='main-container px-10 lg:px-[100px] bg-[#E7F0EB] py-10 lg:py-20'>
     <div className='max-container flex flex-col items-center gap-16'>
         <h3 className='text-3xl lg:text-4xl text-primary-textclr font-bold'>
             Empowerment Impact Metrics
         </h3>
-        <div className='w-full grid grid-cols-1 lg:grid-cols-3 gap-8 items-center max-w-[1216px]'>
+        <div className='w-full grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-[1216px]'>
             {
                 metrics.map((item, index) => (
                     <Card 

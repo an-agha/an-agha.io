@@ -6,20 +6,24 @@ function Features() {
 
     const features = [
         {
-            icon: 'streamline:graph-solid',
+            image: '/images/features/graph.svg',
             content: 'Transform sustainability challenges into profitable opportunities',
+            alt: 'graph icon',
         },
         {
-            icon: 'fa6-solid:users',
+            image: '/images/features/group.svg',
             content: 'Empower every stakeholder with intelligent monitoring',
+            alt: 'group of people icon',
         },
         {
-            icon: 'streamline:graph-solid',
+            image: '/images/features/plant.svg',
             content: 'Generate verified carbon credits from sustainable practices',
+            alt: 'save plant icon',
         },
         {
-            icon: 'fa6-solid:users',
+            image: '/images/features/leaves.svg',
             content: 'Close the loop with measurable ROI on sustainability investments',
+            alt: 'leave icon',
         },
     ]
 
@@ -38,7 +42,12 @@ function Features() {
             {
                 features.map((item,index) => (
                     <div className="flex flex-col items-center gap-6 shadow-md bg-white py-6 px-2.3 rounded-2xl" key={index}>
-                        <Icon icon={item.icon} color="#10B981" className="text-xl" />
+                        <Image
+                        src={item.image}
+                        width={45}
+                        height={45}
+                        alt={item.alt}
+                         />
                         <span className="w-[calc(100%-20px)] text-secondary text-center">
                             {item.content}
                         </span>
