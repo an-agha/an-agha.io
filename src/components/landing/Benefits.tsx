@@ -13,7 +13,7 @@ function Benefits() {
   ]
 
   return (
-    <section className='main-container py-[86px]'>
+    <section className='main-container py-[86px] px-10 lg:px-[100px]'>
       <div className="max-container flex flex-col items-center gap-10">
         <h2 className='text-3xl lg:text-4xl text-primary-textclr text-center font-bold'>
           <span className='text-primary'>
@@ -37,7 +37,7 @@ function Benefits() {
           alt='decorative image' 
           className='hidden md:block'
           />
-          <div className='w-max max-w-[670px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]'>
+          <div className='w-full md:w-max max-w-[670px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]'>
             <h4 className='text-lg lg:text-2xl font-medium text-primary-textclr'>
               Project Developers & Owners - Strategic Empowerment
             </h4>

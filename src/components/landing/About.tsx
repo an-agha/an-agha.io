@@ -3,7 +3,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section className='main-container pb-10 pt-20'>
+    <section className='main-container pb-10 pt-20 px-10 lg:px-[100px]'>
         <div className="max-container flex flex-col gap-10 md:flex-row justify-between items-center">
             <div className='flex flex-col max-w-[640px] gap-6'>
                 <h2 className='text-4xl lg:text-5xl leading-14 font-bold text-primary-textclr'>

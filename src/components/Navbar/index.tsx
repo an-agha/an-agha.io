@@ -76,7 +76,7 @@ function Navbar() {
 
 
       </div>
-      <Mobile />
+      {/* <Mobile /> */}
     </nav>
   )
 }

@@ -34,7 +34,7 @@ function Architecture() {
 
   return (
     <section className='relative main-container  px-10 lg:px-[100px]'>
-      <div className="max-container w-full flex flex-col items-center">
+      <div className="max-container w-full flex flex-col items-center gap-10">
         <h2 className='text-3xl lg:text-4xl text-primary-textclr font-bold text-center'>
           Technology Empowerment <br />
           Architecture
