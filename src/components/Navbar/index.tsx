@@ -49,13 +49,20 @@ function Navbar() {
   return (
     <nav
       className={cn(
-        "w-screen z-100 fixed  px-7 flex flex-1 items-center h-[100px] bg-transparent duration-300",
-        scrolled ? "bg-background h-[80px]" : "bg-background md:bg-transparent h-[100px]"
+        "w-screen h-[60px] md:h-[100px] z-100 fixed  px-7 flex flex-1 items-center bg-transparent duration-300",
+        scrolled ? "bg-background h-[80px]" : "bg-background md:bg-transparent h-[60px] md:h-[100px]"
       )}
     // className='w-screen z-100 fixed  px-7 flex flex-1 items-center h-[100px] bg-transparent'
     >
-      <div className="hidden h-[60px] md:flex flex-1 items-center justify-between ">
-        <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />
+      <div className="md:flex flex-1 items-center justify-between ">
+        <Image 
+        src="/images/logos/citech-logo.svg" 
+        alt='logo' 
+        width={50} 
+        height={60} 
+        draggable={false} 
+        className='h-[40px] md:h-[60px]'
+        />
 
         {/* <div className="flex flex-1" /> */}
         <div className="hidden lg:flex h-[60px] gap-[45px] items-center justify-end ">
