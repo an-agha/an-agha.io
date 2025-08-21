@@ -1,5 +1,4 @@
 import Hero from "@/components/landing/Hero";
-import Layout from "./layout";
 import Features from "@/components/landing/Features";
 import About from "@/components/landing/About";
 import WhyUs from "@/components/landing/WhyUs";
@@ -10,8 +9,8 @@ import Metrics from "@/components/landing/Metrics";
 
 export default function Home() {
   return (
-    <Layout>
-        <Hero />\
+    <>
+        <Hero />
         <Features />
         <About />
         <WhyUs />
@@ -19,6 +18,6 @@ export default function Home() {
         <Architecture />
         <Benefits />
         <Metrics />
-    </Layout>
+    </>
   );
 }
