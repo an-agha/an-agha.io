@@ -257,4 +257,17 @@
     width: 100%;
     max-width: 1240px;
   }
+
+  .embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%; /* Each slide takes 100% width */
+}
+
 }
