@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Epilogue, Montserrat } from "next/font/google";
+import { Geist, Geist_Mono, Epilogue, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
@@ -10,8 +10,8 @@ const epilogue = Epilogue({
   subsets: ["latin"],
 });
 
-const montserrat = Montserrat({
-  variable: "--font-epilogue",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 })
 
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${epilogue.variable} ${montserrat.variable} antialiased`}
+        className={`${epilogue.variable} ${manrope.variable} antialiased`}
       >
         <Navbar />
         {children}
