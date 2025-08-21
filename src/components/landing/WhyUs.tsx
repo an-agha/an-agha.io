@@ -33,7 +33,7 @@ function WhyUs() {
 
   return (
     <section className='main-container relative px-10 lg:px-[100px]'>
-        <div className="max-container flex flex-col items-center gap-10 lg:gap-y-[66px]">
+        <div className="max-container flex flex-col items-center gap-10 lg:gap-y-[66px] z-20">
             <h3 className='w-full text-3xl lg:text-4xl font-bold text-primary-textclr max-w-[833px]'>
                 Why Empowerment Matters
             </h3>
@@ -69,7 +69,7 @@ function WhyUs() {
         width={274}
         height={274}
         alt='decorative image'
-        className='absolute left-0 max-h-[274px] object-contain object-left bottom-0'
+        className='absolute left-0 w-[50px] lg:w-[274px] max-h-[274px] object-contain object-left bottom-0 z-10'
          />
     </section>
   )
