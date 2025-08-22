@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { Contact } from 'lucide-react'
 import Link from 'next/link'
 import ContactForm from "./form"
 

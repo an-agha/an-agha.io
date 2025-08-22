@@ -1,10 +1,18 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 function Cta() {
+
+     const pathname = usePathname()
+
+  // Set background based on route
+  const bgColor = pathname === "/" || pathname === "/contact" ? "bg-[#1A1A1A]" : "bg-[#EAF8EF]"
+
   return (
-    <section className="main-container bg-[#1A1A1A] px-10 lg:px-[100px]">
+    <section className={`main-container px-10 lg:px-[100px] ${bgColor}`}>
         <div className="max-container flex flex-col items-center border-b-2 py-9 border-white/30">
             <div className='w-full flex justify-between items-center'>
                <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />

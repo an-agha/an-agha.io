@@ -5,7 +5,6 @@ import Cta from './Cta'
 function index() {
   return (
     <footer className='main-container'>
-      <Top />
       <Cta />
     </footer>
   )

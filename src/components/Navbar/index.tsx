@@ -75,6 +75,7 @@ function Navbar() {
           draggable={false}
           className='h-[40px] md:h-[60px]'
         />
+        </Link>
 
         {/* <div className="flex flex-1" /> */}
         <div className="hidden lg:flex h-[60px] gap-[45px] items-center justify-end ">
@@ -85,7 +86,8 @@ function Navbar() {
               </Link>
             ))
           }
-          <Button className='max-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
+         <Link href="/contact">
+          <Button className='min-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
          bg-gradient-to-r from-secondary to-primary
          hover:from-secondary-hover hover:to-primary-hover
          transition-all duration-300' aria-label='button-to-contact-page' onClick={OnClickContact}>Contact</Button>
