@@ -8,6 +8,8 @@ import { Button } from '../ui/button';
 import Mobile from './Mobile';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { MobileMenu } from './mobile-menu';
+import { useRouter } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
 type NavPathTypes = {
   title: string,
@@ -31,6 +33,9 @@ const NavPaths: NavPathTypes[] = [
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false); // ✅ state for scroll status
+  const { push } = useRouter();
+  const pathname = usePathname();
+  const home = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,29 +51,36 @@ function Navbar() {
   }, []);
 
 
+  const OnClickContact = () => {
+    push("/contact")
+  }
+
+
+
+
   return (
     <nav
       className={cn(
         "w-screen h-[60px] md:h-[100px] z-100 fixed  px-7 flex flex-1 items-center bg-transparent duration-300",
-        scrolled ? "bg-background h-[80px]" : "bg-background md:bg-transparent h-[60px] md:h-[100px]"
+        (scrolled || !home) ? "bg-background h-[80px] border-b" : "bg-background md:bg-transparent h-[60px] md:h-[100px] border-b border-b-transparent"
       )}
     // className='w-screen z-100 fixed  px-7 flex flex-1 items-center h-[100px] bg-transparent'
     >
       <div className="md:flex flex-1 items-center justify-between ">
-        <Image 
-        src="/images/logos/citech-logo.svg" 
-        alt='logo' 
-        width={50} 
-        height={60} 
-        draggable={false} 
-        className='h-[40px] md:h-[60px]'
+        <Image
+          src="/images/logos/citech-logo.svg"
+          alt='logo'
+          width={50}
+          height={60}
+          draggable={false}
+          className='h-[40px] md:h-[60px]'
         />
 
         {/* <div className="flex flex-1" /> */}
         <div className="hidden lg:flex h-[60px] gap-[45px] items-center justify-end ">
           {
             NavPaths?.map((path, index) => (
-              <Link href={path?.path} key={index} className={cn("!w-full text-nowrap", scrolled ? 'text-foreground' : 'text-white')}>
+              <Link href={path?.path} key={index} className={cn("!w-full text-nowrap", (scrolled || !home) ? 'text-foreground' : 'text-white')}>
                 {path?.title}
               </Link>
             ))
@@ -76,7 +88,7 @@ function Navbar() {
           <Button className='max-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
          bg-gradient-to-r from-secondary to-primary
          hover:from-secondary-hover hover:to-primary-hover
-         transition-all duration-300'>Contact</Button>
+         transition-all duration-300' aria-label='button-to-contact-page' onClick={OnClickContact}>Contact</Button>
         </div>
 
 
