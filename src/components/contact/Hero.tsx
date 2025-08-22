@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Link from 'next/link';
-import ContactForm from "./form";
+// import ContactForm from "./form";
 
 function Hero() {
   const contact = [
@@ -55,7 +55,7 @@ function Hero() {
         </div>
       </div>
       <div className='w-full md:w-1/2'>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </section>
   )
