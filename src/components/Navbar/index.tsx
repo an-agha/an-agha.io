@@ -3,13 +3,10 @@
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
-import Mobile from './Mobile';
-import { Icon } from '@iconify/react/dist/iconify.js';
 import { MobileMenu } from './mobile-menu';
-import { useRouter } from 'next/navigation';
-import { usePathname } from "next/navigation";
 
 type NavPathTypes = {
   title: string,
@@ -66,15 +63,18 @@ function Navbar() {
       )}
     // className='w-screen z-100 fixed  px-7 flex flex-1 items-center h-[100px] bg-transparent'
     >
+
+
       <div className="md:flex flex-1 items-center justify-between ">
-        <Image
-          src="/images/logos/citech-logo.svg"
-          alt='logo'
-          width={50}
-          height={60}
-          draggable={false}
-          className='h-[40px] md:h-[60px]'
-        />
+        <Link href="/">
+          <Image
+            src="/images/logos/citech-logo.svg"
+            alt='logo'
+            width={50}
+            height={60}
+            draggable={false}
+            className='h-[40px] md:h-[60px]'
+          />
         </Link>
 
         {/* <div className="flex flex-1" /> */}
@@ -86,15 +86,16 @@ function Navbar() {
               </Link>
             ))
           }
-         <Link href="/contact">
-          <Button className='min-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
+
+          <Button className='max-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
          bg-gradient-to-r from-secondary to-primary
          hover:from-secondary-hover hover:to-primary-hover
          transition-all duration-300' aria-label='button-to-contact-page' onClick={OnClickContact}>Contact</Button>
         </div>
-
-
       </div>
+
+
+
 
       <MobileMenu logo={
         <Link href="/">
@@ -107,7 +108,7 @@ function Navbar() {
           />
         </Link>
       } />
-    </nav>
+    </nav >
   )
 }
 
