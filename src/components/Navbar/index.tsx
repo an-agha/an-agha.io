@@ -55,7 +55,8 @@ function Navbar() {
     // className='w-screen z-100 fixed  px-7 flex flex-1 items-center h-[100px] bg-transparent'
     >
       <div className="md:flex flex-1 items-center justify-between ">
-        <Image 
+        <Link href="/">
+          <Image 
         src="/images/logos/citech-logo.svg" 
         alt='logo' 
         width={50} 
@@ -63,6 +64,7 @@ function Navbar() {
         draggable={false} 
         className='h-[40px] md:h-[60px]'
         />
+        </Link>
 
         {/* <div className="flex flex-1" /> */}
         <div className="hidden lg:flex h-[60px] gap-[45px] items-center justify-end ">
@@ -73,10 +75,12 @@ function Navbar() {
               </Link>
             ))
           }
-          <Button className='max-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
+         <Link href="/contact">
+          <Button className='min-w-[182px] w-full px-6 py-2 rounded-full text-white font-medium shadow-lg
          bg-gradient-to-r from-secondary to-primary
          hover:from-secondary-hover hover:to-primary-hover
          transition-all duration-300'>Contact</Button>
+         </Link>
         </div>
 
 

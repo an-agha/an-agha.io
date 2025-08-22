@@ -1,6 +1,8 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { Contact } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import Form from './Form'
 
 function Hero() {
   const contact = [
@@ -55,7 +57,7 @@ function Hero() {
       </div>
       </div>
       <div className='w-full md:w-1/2'>
-
+        <Form />
       </div>
     </section>
   )
