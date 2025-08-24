@@ -45,7 +45,10 @@ const visionDetails = [
 
   return (
     <section className='relative main-container px-10 lg:px-[100px] py-[100px]'>
-        <div className='max-container flex flex-col items-center gap-5'>
+        <div className='max-container flex flex-col items-center gap-5'
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        >
             <h2 className='text-3xl lg:text-[48px] text-primary-textclr font-bold text-center'>
                 <span className='text-primary'>
                     Vision:&nbsp;

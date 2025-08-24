@@ -83,7 +83,8 @@ function index() {
   return (
    <section className='main-container px-10 lg:px-[100px] bg-[#E7F0EB] py-10 lg:py-20'>
     <div className='max-container flex flex-col items-center gap-16'>
-        <h3 className='text-3xl lg:text-4xl text-primary-textclr font-bold'>
+        <h3 className='text-3xl lg:text-4xl text-primary-textclr font-bold'
+        >
             Empowerment Impact Metrics
         </h3>
         <div className='w-full grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-[1216px]'>

@@ -3,10 +3,14 @@ import React from 'react'
 
 function About() {
   return (
-    <section className='main-container pb-10 pt-20 px-10 lg:px-[100px]'>
+    <section className='main-container pb-10 pt-20 px-10 lg:px-[100px]'
+    >
         <div className="max-container flex flex-col gap-10 md:flex-row justify-between items-center">
             <div className='flex flex-col max-w-[640px] gap-6'>
-                <h2 className='text-4xl lg:text-5xl leading-14 font-bold text-primary-textclr'>
+                <h2 className='text-4xl lg:text-5xl leading-14 font-bold text-primary-textclr'
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                >
                     Empowering 
                     <span className='text-primary'> Sustainable</span>  <br />
                     Transformation

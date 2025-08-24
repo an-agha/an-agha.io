@@ -97,9 +97,13 @@ function index() {
     ]
 
     return (
-        <section className='main-container px-10 lg:px-[100px] py-20'>
+        <section className='main-container px-10 lg:px-[100px] py-20'
+        >
             <div className="max-container flex flex-col items-center py-[100px] gap-8">
-                <h2 className='text-4xl lg:text-5xl text-center leading-[50px] font-bold text-primary-textclr'>
+                <h2 className='text-4xl lg:text-5xl text-center leading-[50px] font-bold text-primary-textclr'
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                >
                     Core
                     <span className='text-4xl lg:text-5xl text-primary'> Empowerment</span>
                     <br />
@@ -125,6 +129,8 @@ function index() {
                         height={458}
                         alt="module section image"
                         className='w-[333px] h-[458px] rounded-full object-cover'
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
                     />
                     <div>
                         <div className='grid grid-cols-1 gap-10'>

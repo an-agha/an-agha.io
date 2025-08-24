@@ -28,7 +28,8 @@ function Features() {
     ]
 
   return (
-    <section className='relative main-container px-10 lg:px-[100px] py-[56px]'>
+    <section className='relative main-container px-10 lg:px-[100px] py-[56px]'
+    >
         <Image 
         src="/images/side-vector.png"
         width={112}

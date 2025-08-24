@@ -35,11 +35,15 @@ function Architecture() {
   return (
     <section className='relative main-container  px-10 lg:px-[100px]'>
       <div className="max-container w-full flex flex-col items-center gap-10">
-        <h2 className='text-3xl lg:text-4xl text-primary-textclr font-bold text-center'>
+        <h2 className='text-3xl lg:text-4xl text-primary-textclr font-bold text-center'
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          >
           Technology Empowerment <br />
           Architecture
         </h2>
-        <div className='w-full flex flex-col items-center gap-20'>
+        <div className='w-full flex flex-col items-center gap-20' 
+        >
           {
             CardDetails.map((item, index) => (
               <Card
@@ -60,6 +64,8 @@ function Architecture() {
       height={216}
       alt='decorative image'
       className='absolute w-[100px] lg:w-[200px] right-0 top-[-150px]'
+      data-aos="fade-up"
+      data-aos-duration="1000"
        />
     </section>
   )
