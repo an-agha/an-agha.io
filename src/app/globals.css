@@ -261,15 +261,20 @@
 
   .swiper-scrollbar {
     position: absolute;
-    left: 41% !important;
+    left: 0% !important;
     top: 50% !important;
     transform: translateY(-50%);
   }
 
-  @media (max-width: 768px) {
+   @media (min-width: 1024px) {
     .swiper-scrollbar {
-      left: 0px !important;
+      left: 38% !important;
     }
-  }
+   } 
+   @media (min-width: 1280px) {
+    .swiper-scrollbar {
+      left: 40% !important;
+    }
+   } 
 
 }

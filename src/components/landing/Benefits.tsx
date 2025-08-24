@@ -98,7 +98,7 @@ function Benefits() {
                         verticalClass: "max-h-[250px]"
                     }}
                     modules={[Scrollbar, Autoplay]}
-                    className="max-h-[450px] md:max-h-[500px] lg:max-h-[500px] relative"
+                    className="w-full max-h-[450px] md:max-h-[500px] lg:max-h-[500px] relative"
                 >
                     {benefits.map((item, index) => (
                         <SwiperSlide key={index} className=''>
@@ -109,9 +109,8 @@ function Benefits() {
                                     width={450}
                                     height={450}
                                     alt="benefits section image"
-                                    className="hidden !h-[450px] md:flex lg:flex"
+                                    className="hidden !h-[300px] !lg:h-[450px] lg:flex object-cover"
                                 />
-                                <div className='w-[50px] h-full hidden md:flex lg:flex' />
                                 <div className="!w-full md:w-max lg:max-w-[670px] md:max-w-[400px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]">
                                     <h4 className="text-lg lg:text-2xl font-medium text-primary-textclr">
                                         {item.title}
