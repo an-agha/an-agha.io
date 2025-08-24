@@ -2,22 +2,21 @@
 
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'
-import React from 'react'
+import React from 'react';
 
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+// import required modules
+import { Scrollbar, Autoplay } from 'swiper/modules';
+
 
 function Benefits() {
-    const [emblaRef] = useEmblaCarousel(
-    { loop: true, align: 'start', dragFree: true },
-    [
-      Autoplay({
-        delay: 2500, 
-        stopOnInteraction: false, 
-        stopOnMouseEnter: true,   
-      }),
-    ]
-  )
+
 
     const benefits = [
         {
@@ -85,26 +84,35 @@ function Benefits() {
                     </span>
                     Benefits
                 </h2>
-                <div className="embla w-full overflow-hidden" ref={emblaRef}>
-                    <div className="w-full embla__container flex gap-10">
-                        {benefits.map((item, index) => (
-                            <div className="embla__slide w-full flex flex-col items-center md:flex-row md:justify-between gap-10 cursor-grab" key={index}>
-                                
+                <Swiper
+                    direction={'vertical'}
+                    autoplay={{
+                        delay: 4500,
+                        // disableOnInteraction: true
+                    }}
+
+                    scrollbar={{
+                        hide: false,
+                        enabled: true,
+                        snapOnRelease: true,
+                        verticalClass: "max-h-[250px]"
+                    }}
+                    modules={[Scrollbar, Autoplay]}
+                    className="max-h-[450px] md:max-h-[500px] lg:max-h-[500px] relative"
+                >
+                    {benefits.map((item, index) => (
+                        <SwiperSlide key={index} className=''>
+                            <div className="w-full !flex flex-1 h-[450px] md:h-[500px] lg:h-[500px] flex-col md:flex-row lg:flex-row !justify-center md:justify-between gap-10 cursor-grab items-center pl-5 md:pl-0 lg:pl-0" >
+
                                 <Image
                                     src={item.image}
                                     width={450}
                                     height={450}
                                     alt="benefits section image"
-                                    className="w-[300px] lg:w-[450px]"
+                                    className="hidden !h-[450px] md:flex lg:flex"
                                 />
-                                <Image
-                                    src="/images/stick.svg"
-                                    width={2}
-                                    height={200}
-                                    alt="decorative image"
-                                    className="hidden md:block"
-                                />
-                                <div className="w-full md:w-max max-w-[670px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]">
+                                <div className='w-[50px] h-full hidden md:flex lg:flex' />
+                                <div className="!w-full md:w-max lg:max-w-[670px] md:max-w-[400px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]">
                                     <h4 className="text-lg lg:text-2xl font-medium text-primary-textclr">
                                         {item.title}
                                     </h4>
@@ -118,9 +126,9 @@ function Benefits() {
                                     </ul>
                                 </div>
                             </div>
-                        ))}
-                    </div>
-                </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
 
             </div>
         </section>

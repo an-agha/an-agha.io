@@ -27,7 +27,7 @@ const RHFInput: React.FC<InputProps> = ({ name, desc, placeholder, className, la
                     <FormItem className={cn(['relative w-full', error && 'mb-4'])}>
                         {label && <FormLabel>{label}</FormLabel>}
                         <FormControl>
-                            <Input className={`p-7 rounded ${className}`} placeholder={placeholder} {...field} />
+                            <Input className={`p-7 rounded-lg ${className}`} placeholder={placeholder} {...field} />
                         </FormControl>
                         {
                             desc &&

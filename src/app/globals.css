@@ -258,16 +258,18 @@
     max-width: 1240px;
   }
 
-  .embla {
-  overflow: hidden;
-}
 
-.embla__container {
-  display: flex;
-}
+  .swiper-scrollbar {
+    position: absolute;
+    left: 41% !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
 
-.embla__slide {
-  flex: 0 0 100%; /* Each slide takes 100% width */
-}
+  @media (max-width: 768px) {
+    .swiper-scrollbar {
+      left: 0px !important;
+    }
+  }
 
 }
