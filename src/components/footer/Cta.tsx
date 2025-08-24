@@ -12,11 +12,11 @@ function Cta() {
             <div className='w-full flex justify-between items-center'>
                <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />
                <div className='flex flex-col items-start md:flex-row gap-[30px]'>
-                <Link href="/" className='text-[#062412] font-Manrope'>
+                {/* <Link href="/privacy-policy" className='text-[#062412] font-Manrope'>
                     Privacy Policy
-                </Link>
-                <Link href="/" className='text-[#062412] font-Manrope'>
-                    Terms
+                </Link> */}
+                <Link href="/legal-disclaimer" className='text-[#062412] font-Manrope'>
+                    Legal Disclaimer
                 </Link>
                </div>
             </div>
