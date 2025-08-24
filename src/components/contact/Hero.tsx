@@ -33,7 +33,7 @@ function Hero() {
   ]
 
   return (
-    <section className='max-container min-h-screen flex flex-col md:flex-row py-20'>
+    <section className='max-container min-h-screen flex flex-col md:flex-row md:justify-between py-20'>
       <div className='w-full md:w-1/2 flex flex-col gap-10 lg:gap-[50px] max-w-[470px]'>
         <div className='w-full flex flex-col gap-[18px]'>
           <h1 className='text-3xl lg:text-[48px] font-bold text-primary-textclr'>
