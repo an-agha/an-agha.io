@@ -1,12 +1,15 @@
 import React from 'react'
 import { Button } from '../ui/button'
-import Image from 'next/image'
 
 function Hero() {
   return (
     <section className='relative main-conatiner h-screen bg-[url(/images/bg-vector.png)] bg-no-repeat bg-right md:bg-left bg-cover px-10 lg:px-[100px]'>
         <div className='flex h-full items-center justify-end'>
-            <div className='relative flex flex-col w-full md:w-[35%] lg:w-[50%] xl:w-[60%] gap-y-[38px] pr-6 lg:pr-10 xl:pr-14 z-50'>
+            <div 
+            className='relative flex flex-col w-full md:w-[35%] lg:w-[50%] xl:w-[60%] gap-y-[38px] pr-6 lg:pr-10 xl:pr-14 z-50'
+            data-aos="zoom-out"
+        data-aos-duration="1000"
+            >
                 <h1 className='block text-white text-3xl  lg:text-6xl font-semibold'>
                     Construction Industry <br />
                     <span className='block text-primary-light !font-Epilogue'>

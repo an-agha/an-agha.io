@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import type { Metadata } from "next";
 import { Epilogue, Manrope } from "next/font/google";
 import "./globals.css";
+import { AOSWrapper } from "@/components/AosWrapper";
 
 
 const epilogue = Epilogue({
@@ -32,7 +33,9 @@ export default function RootLayout({
         className={`${epilogue.variable} ${manrope.variable} antialiased overscroll-none`}
       >
         <Navbar />
-        {children}
+        <AOSWrapper>
+          {children}
+        </AOSWrapper>
         <Footer />
       </body>
     </html>

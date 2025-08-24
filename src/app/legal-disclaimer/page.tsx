@@ -11,7 +11,7 @@ function legalDisclaimer() {
   ]
 
   return (
-    <main className="main-container pt-[60px] lg:pt-[100px]">
+    <main className="main-container pt-[60px] lg:pt-[100px] px-10 lg:px-[100px]">
       <section className='w-full max-w-[580px] min-h-screen flex flex-col gap-y-6 py-10 lg:py-[100px]'>
         <h1 className='text-3xl lg:text-[48px] font-bold text-primary-textclr'>
           Legal Disclaimer
@@ -19,7 +19,7 @@ function legalDisclaimer() {
         <div className='w-full flex flex-col gap-y-4'>
          {
           content.map((paragraph,index) => (
-            <p className='text-sm lg:text-base text-secondary-textclr'>
+            <p className='text-sm lg:text-base text-secondary-textclr' key={index}>
               {paragraph}
             </p>
           ))

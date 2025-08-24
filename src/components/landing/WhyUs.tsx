@@ -37,7 +37,10 @@ function WhyUs() {
             <h3 className='w-full text-3xl lg:text-4xl font-bold text-primary-textclr max-w-[833px]'>
                 Why Empowerment Matters
             </h3>
-            <div className='grid grid-cols-1 md:grid-cols-2 max-w-[833px] gap-6 lg:gap-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 max-w-[833px] gap-6 lg:gap-10'
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            >
                 {
                     features.map((item,index) => (
                         <div 

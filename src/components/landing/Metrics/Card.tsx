@@ -17,13 +17,18 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ icon, title, bgColor, textClr, list = [] }) => {
   return (
-    <div className='bg-white shadow-md p-8 rounded-2xl flex flex-col gap-4'>
+    <div className='bg-white shadow-md p-8 rounded-2xl flex flex-col gap-4'
+    data-aos="fade-up"
+          data-aos-duration="2000"
+    >
       {/* Top section */}
       <div className='flex flex-col items-center gap-6'>
-        <div className={cn('w-[64px] h-[64px] rounded-full flex items-center justify-center', bgColor)}>
+        <div className={cn('w-[64px] h-[64px] rounded-full flex items-center justify-center', bgColor)}
+        >
           <Icon icon={icon} className='text-white text-2xl' />
         </div>
-        <h4 className='text-xl lg:text-2xl font-bold text-primary-textclr'>
+        <h4 className='text-xl lg:text-2xl font-bold text-primary-textclr'
+        >
           {title}
         </h4>
       </div>
