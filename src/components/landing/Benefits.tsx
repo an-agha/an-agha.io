@@ -83,10 +83,10 @@ function Benefits() {
                 </h2>
                 <Swiper
                     direction={'vertical'}
-                    // autoplay={{
-                    //     delay: 4500,
-                    //     // disableOnInteraction: true
-                    // }}
+                    autoplay={{
+                        delay: 4500,
+                        // disableOnInteraction: true
+                    }}
 
                     scrollbar={{
                         hide: false,
@@ -95,21 +95,21 @@ function Benefits() {
                         verticalClass: "max-h-[250px]"
                     }}
                     modules={[Scrollbar, Autoplay]}
-                    className="max-h-[500px] relative"
+                    className="max-h-[450px] md:max-h-[500px] lg:max-h-[500px] relative"
                 >
                     {benefits.map((item, index) => (
                         <SwiperSlide key={index} className=''>
-                            <div className="w-full !flex flex-1 h-[500px] flex-col md:flex-row lg:flex-row !justify-center md:justify-between gap-10 cursor-grab items-center pl-5 md:pl-0 lg:pl-0" >
+                            <div className="w-full !flex flex-1 h-[450px] md:h-[500px] lg:h-[500px] flex-col md:flex-row lg:flex-row !justify-center md:justify-between gap-10 cursor-grab items-center pl-5 md:pl-0 lg:pl-0" >
 
                                 <Image
                                     src={item.image}
                                     width={450}
                                     height={450}
                                     alt="benefits section image"
-                                    className="hidden w-[300px] lg:w-[450px] md:flex lg:flex"
+                                    className="hidden !h-[450px] md:flex lg:flex"
                                 />
-                                <div className='w-[50px] hidden md:flex lg:flex' />
-                                <div className="w-full  md:w-max lg:max-w-[670px] md:max-w-[400px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]">
+                                <div className='w-[50px] h-full hidden md:flex lg:flex' />
+                                <div className="!w-full md:w-max lg:max-w-[670px] md:max-w-[400px] bg-primary-foreground flex flex-col gap-6 py-6 px-4 rounded-[20px]">
                                     <h4 className="text-lg lg:text-2xl font-medium text-primary-textclr">
                                         {item.title}
                                     </h4>
