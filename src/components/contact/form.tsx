@@ -32,7 +32,7 @@ const submitBooking = async (formData: z.infer<typeof formSchema>, reset: (...ar
                 website: formData?.website,
             }),
         });
-        const result = await response.json();
+       
 
         if (response.status === 200) {
             reset();

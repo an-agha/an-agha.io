@@ -1,5 +1,3 @@
-import { main, p, section } from 'motion/react-client'
-import React from 'react'
 
 function legalDisclaimer() {
 

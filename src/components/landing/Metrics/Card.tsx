@@ -15,7 +15,7 @@ interface CardProps {
   list: CardItem[]
 }
 
-const Card: React.FC<CardProps> = ({ icon, title, bgColor, textClr, list = [] }) => {
+const Card: React.FC<CardProps> = ({ icon, title, bgColor, list = [] }) => {
   return (
     <div className='bg-white shadow-md p-8 rounded-2xl flex flex-col gap-4'
     data-aos="fade-up"

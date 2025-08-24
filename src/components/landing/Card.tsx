@@ -1,10 +1,7 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { ListItem } from '@/components/landing/Architecture/types'
 
-interface ListItem {
-  icon: string
-  content: string
-}
 
 interface CardProps {
   title: string
