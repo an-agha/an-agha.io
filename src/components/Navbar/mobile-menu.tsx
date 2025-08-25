@@ -123,7 +123,8 @@ export function MobileMenu({ className, navItems = defaultNavItems, logo, onItem
     }, [isOpen]);
 
     const handleBookConsultation = () => {
-        router.push("/book-consultation");
+        router.push("/contact");
+        closeMenu();
     };
 
     return (
