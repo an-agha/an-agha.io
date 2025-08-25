@@ -24,17 +24,26 @@ interface MobileMenuProps {
 
 
 const defaultNavItems: NavItem[] = [
-    {
-        label: "Carbon Credits",
-        href: "/"
-    },
-    {
-        label: "Platform",
-        href: "/"
-    }, {
-        label: "Technology",
-        href: "/"
-    }
+  {
+    label: "Modules",
+    href: "/#modules"
+  },
+  {
+    label: "Technology",
+    href: "/#technology"
+  }, 
+  {
+    label: "Benefits",
+    href: "/#benefits"
+  },
+  {
+    label: "Metrics",
+    href: "/#metrics"
+  },
+  {
+    label: "Vision",
+    href: "/#vision"
+  },
 ];
 
 export function MobileMenu({ className, navItems = defaultNavItems, logo, onItemClick }: MobileMenuProps) {
