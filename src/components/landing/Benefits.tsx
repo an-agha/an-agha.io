@@ -72,7 +72,9 @@ function Benefits() {
     ]
 
     return (
-        <section className='main-container py-[86px] px-10 lg:px-[100px]'>
+        <section className='main-container py-[86px] px-10 lg:px-[100px]'
+        id="benefits"
+        >
             <div className="max-container flex flex-col items-center gap-10">
                 <h2 className='text-3xl lg:text-4xl text-primary-textclr text-center font-bold'
                 data-aos="fade-up"

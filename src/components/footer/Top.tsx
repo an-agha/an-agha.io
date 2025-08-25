@@ -13,9 +13,6 @@ function Top() {
                 </span>
                 <div className='flex gap-x-6'>
                     <Button>
-                        Discover More
-                    </Button>
-                    <Button variant={'outline'}>
                         Schedule Demo
                     </Button>
                 </div>

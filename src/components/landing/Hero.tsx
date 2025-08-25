@@ -7,7 +7,7 @@ function Hero() {
         <div className='flex h-full items-center justify-end'>
             <div 
             className='relative flex flex-col w-full md:w-[35%] lg:w-[50%] xl:w-[60%] gap-y-[38px] pr-6 lg:pr-10 xl:pr-14 z-50'
-            data-aos="zoom-out"
+            data-aos="fade-up"
         data-aos-duration="1000"
             >
                 <h1 className='block text-white text-3xl  lg:text-6xl font-semibold'>
@@ -25,18 +25,9 @@ function Hero() {
                 </span>
                 <div className='flex flex-col gap-6 lg:flex-row'>
                     <Button>
-                        Discover More
-                    </Button>
-                    <Button variant={'outline'}>
                         Schedule Demo
                     </Button>
                 </div>
-            </div>
-            <div className='absolute hidden lg:flex items-center gap-4 bottom-[70px] bg-white left-[100px] lg:left-[20%] p-4 rounded-xl'>
-                <div className='w-3 h-3 rounded-full bg-[#10B981]' />
-                <span className='text-black font-medium'>
-                    Real-time monitoring active
-                </span>
             </div>
         </div>
     </section>
