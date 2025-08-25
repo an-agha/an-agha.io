@@ -1,7 +1,14 @@
-import React from 'react'
-import { Button } from '../ui/button'
+"use client"
+
+import { useRouter } from 'next/navigation';
+import { Button } from '../ui/button';
 
 function Top() {
+
+    const router = useRouter()
+    const handleBookConsultation = () => {
+        router.push("/contact");
+    };
     return (
         <div className='main-container bg-[url(/images/Banner.png)] py-10 px-10 lg:px-[100px]'>
             <div className="max-container !max-w-[986px] flex flex-col items-center gap-5">
@@ -12,7 +19,7 @@ function Top() {
                     Join the platform that turns sustainability challenges into profitable opportunities while creating measurable environmental impact
                 </span>
                 <div className='flex gap-x-6'>
-                    <Button>
+                    <Button onClick={handleBookConsultation}>
                         Schedule Demo
                     </Button>
                 </div>
