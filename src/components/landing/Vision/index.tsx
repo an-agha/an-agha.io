@@ -44,7 +44,9 @@ const visionDetails = [
   ]
 
   return (
-    <section className='relative main-container px-10 lg:px-[100px] py-[100px]'>
+    <section className='relative main-container px-10 lg:px-[100px] py-[100px]'
+    id="vision"
+    >
         <div className='max-container flex flex-col items-center gap-5'
         data-aos="fade-up"
         data-aos-duration="2000"

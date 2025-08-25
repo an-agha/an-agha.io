@@ -81,7 +81,9 @@ function index() {
 
 
   return (
-   <section className='main-container px-10 lg:px-[100px] bg-[#E7F0EB] py-10 lg:py-20'>
+   <section className='main-container px-10 lg:px-[100px] bg-[#E7F0EB] py-10 lg:py-20'
+   id="metrics"
+   >
     <div className='max-container flex flex-col items-center gap-16'>
         <h3 className='text-3xl lg:text-4xl text-primary-textclr font-bold'
         >

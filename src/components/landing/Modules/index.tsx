@@ -98,6 +98,7 @@ function index() {
 
     return (
         <section className='main-container px-10 lg:px-[100px] py-20'
+        id='modules'
         >
             <div className="max-container flex flex-col items-center py-[100px] gap-8">
                 <h2 className='text-4xl lg:text-5xl text-center leading-[50px] font-bold text-primary-textclr'

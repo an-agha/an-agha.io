@@ -47,7 +47,7 @@ function Features() {
                         height={45}
                         alt={item.alt}
                          />
-                        <span className="w-[calc(100%-20px)] text-secondary text-center">
+                        <span className="w-[calc(100%-20px)] text-primary-textclr text-center">
                             {item.content}
                         </span>
                     </div>

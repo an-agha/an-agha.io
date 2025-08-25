@@ -15,16 +15,25 @@ type NavPathTypes = {
 
 const NavPaths: NavPathTypes[] = [
   {
-    title: "Carbon Credits",
-    path: "/"
+    title: "Modules",
+    path: "/#modules"
   },
   {
-    title: "Platform",
-    path: "/"
-  }, {
     title: "Technology",
-    path: "/"
-  }
+    path: "/#technology"
+  }, 
+  {
+    title: "Benefits",
+    path: "/#benefits"
+  },
+  {
+    title: "Metrics",
+    path: "/#metrics"
+  },
+  {
+    title: "Vision",
+    path: "/#vision"
+  },
 ];
 
 
