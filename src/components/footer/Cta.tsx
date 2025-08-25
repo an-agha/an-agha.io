@@ -10,15 +10,9 @@ function Cta() {
     <section className='main-container px-10 lg:px-[100px] bg-[#EAF8EF]'>
         <div className="max-container flex flex-col items-center border-b-2 py-9 border-[#B5D0C0]">
             <div className='w-full flex justify-between items-center'>
-               <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />
-               <div className='flex flex-col items-start md:flex-row gap-[30px]'>
-                {/* <Link href="/privacy-policy" className='text-[#062412] font-Manrope'>
-                    Privacy Policy
-                </Link> */}
-                <Link href="/legal-disclaimer" className='text-[#062412] font-Manrope'>
-                    Legal Disclaimer
-                </Link>
-               </div>
+               <Link href="/">
+                    <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />
+               </Link>
             </div>
         </div>
         <div className="max-container flex flex-col items-center gap-2 py-5">
