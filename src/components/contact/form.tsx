@@ -82,7 +82,7 @@ function BookingForm() {
                 form.reset();
             });
             if (result) {
-                showSuccess("Booking Successful", "Your consultation booking has been successful, you will get a meeting invite from us in your inbox.")
+                showSuccess("Booking Successful", "Thank you for contacting us. Our team will review your message and get back to you shortly.")
             } else {
                 showError("Booking Unsuccessful!!", "Your booking has failed, Please try again.")
             }
