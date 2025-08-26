@@ -240,9 +240,13 @@
   h6 {
     font-family: 'Epilogue', sans-serif;
   }
+  h1 > span, h2 > span, h3 > span {
+    font-family: 'Epilogue', sans-serif;
+  }
+
 
   body,
-  p {
+  p, span {
     font-family: 'Manrope', sans-serif;
   }
 
