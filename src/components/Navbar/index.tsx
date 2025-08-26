@@ -79,10 +79,10 @@ function Navbar() {
           <Image
             src="/images/logos/citech-logo.svg"
             alt='logo'
-            width={50}
-            height={60}
+            width={80}
+            height={90}
             draggable={false}
-            className='h-[40px] md:h-[60px]'
+            className='h-[40px] md:h-[80px] md:object-contain'
           />
         </Link>
 

@@ -10,19 +10,14 @@ function Hero() {
       path: 'tel:+603 2011 7991',
     },
     {
-      icon: 'mi:call',
-      content: '+6010 247 6775',
-      path: 'tel:+6010 247 6775',
-    },
-    {
       icon: 'mdi:internet',
       content: 'https://citech.my',
       path: 'https://citech.my',
     },
     {
       icon: 'material-symbols:mail-outline-rounded',
-      content: 'srini@citech.my',
-      path: 'mailto:srini@citech.my',
+      content: 'info@citech.my ',
+      path: 'mailto:info@citech.my ',
     },
     {
       icon: 'tdesign:location',

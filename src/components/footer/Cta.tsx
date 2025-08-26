@@ -11,7 +11,9 @@ function Cta() {
         <div className="max-container flex flex-col items-center border-b-2 py-9 border-[#B5D0C0]">
             <div className='w-full flex justify-between items-center'>
                <Link href="/">
-                    <Image src="/images/logos/citech-logo.svg" alt='logo' width={50} height={60} draggable={false} />
+                    <Image src="/images/logos/citech-logo.svg" alt='logo' width={80} height={90} draggable={false} 
+                    className='h-[40px] md:h-[80px]'
+                    />
                </Link>
             </div>
         </div>
