@@ -4,6 +4,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import validator from "validator";
 
 import { FormAlertDialog } from "@/components/form-alert-dialog";
 import { Form } from '@/components/ui/form';
@@ -29,10 +30,10 @@ const submitBooking = async (formData: z.infer<typeof formSchema>, reset: (...ar
                 name: formData?.fullname,
                 email: formData?.email,
                 message: formData?.description,
-                website: formData?.website,
+                website: formData?.phonenumber,
             }),
         });
-       
+
 
         if (response.status === 200) {
             reset();
@@ -53,16 +54,24 @@ const formSchema = z.object({
     description: z.string().min(5, {
         message: "Please enter a valid messagae"
     }).max(200, "Description should be less than 100 charachters"),
-    website: z.string()?.min(1, {
-        message: "Please select a slot"
-    }).max(50, "Please select a valid timeslot")
+   phonenumber: z
+  .string('Invalid phone number')
+  .refine(
+    (value) =>
+      typeof value === "string" &&
+      value.trim().length > 0 &&
+      validator.isMobilePhone(value, "any", { strictMode: false }),
+    {
+      message: "Valid phone number required",
+    }
+  ),
 });
 
 //  from default values
 const defaultValues = {
     fullname: "",
     email: "",
-    website: "",
+    phonenumber: "",
     description: "",
 
 }
@@ -104,7 +113,7 @@ function BookingForm() {
                         <BaseInput name="fullname" placeholder='Full Name *' />
 
                         <BaseInput name="email" placeholder='Email Address' />
-                        <BaseInput name="website" placeholder='Website' />
+                        <BaseInput name="phonenumber" placeholder='Phone Number' />
                         <BaseTextarea name="description" placeholder='Description' />
 
                         <Button>Submit</Button>
