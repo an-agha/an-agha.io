@@ -18,8 +18,22 @@ const manrope = Manrope({
 
 
 export const metadata: Metadata = {
-  title: "CI Tech",
-  description: "CITECH Website",
+  title: "CITECH | Blockchain Sustainability Platform for Construction",
+  description: "CITECH empowers the construction industry with blockchain technology to achieve sustainability, generate carbon credits, and unlock new revenue streams.",
+  openGraph: {
+    title: 'CITECH | Blockchain Sustainability Platform for Construction',
+    description: 'CITECH empowers the construction industry with blockchain technology to achieve sustainability, generate carbon credits, and unlock new revenue streams.',
+    type: "website",
+    siteName: 'CITECH',
+    images: [
+      {
+        url: 'https://citech.my/opengraph-image.png',
+        width: 1200,
+        height: 627,
+        alt: 'CITECH',
+      }
+    ],
+  },
 };
 
 export default function RootLayout({
