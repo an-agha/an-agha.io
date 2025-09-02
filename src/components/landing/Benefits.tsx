@@ -72,7 +72,7 @@ function Benefits() {
     ]
 
     return (
-        <section className='main-container py-[86px] px-10 lg:px-[100px]'
+        <section className='main-container py-[86px] px-10 lg:px-[100px] pt-10 lg:pt-[100px]'
         id="benefits"
         >
             <div className="max-container flex flex-col items-center gap-10">

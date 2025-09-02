@@ -11,7 +11,7 @@ function Hero() {
     };
 
     return (
-        <section className='relative main-conatiner h-screen bg-[url(/images/bg-vector.png)] bg-no-repeat bg-right md:bg-left bg-cover px-10 lg:px-[100px]'>
+        <section className='relative main-conatiner h-screen bg-[url(/images/banner.webp)] bg-no-repeat bg-left md:bg-left bg-cover px-10 lg:px-[100px]'>
             <div className='flex h-full items-center justify-end'>
                 <div
                     className='relative flex flex-col w-full md:w-[35%] lg:w-[50%] xl:w-[60%] gap-y-[38px] pr-6 lg:pr-10 xl:pr-14 z-50'

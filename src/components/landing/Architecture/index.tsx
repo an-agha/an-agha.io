@@ -33,7 +33,7 @@ function Architecture() {
 
 
   return (
-    <section className='relative main-container  px-10 lg:px-[100px]'
+    <section className='relative main-container  px-10 lg:px-[100px] pt-10 lg:pt-[160px]'
     id="technology"
     >
       <div className="max-container w-full flex flex-col items-center gap-10">
@@ -65,7 +65,7 @@ function Architecture() {
       width={237}
       height={216}
       alt='decorative image'
-      className='absolute w-[100px] lg:w-[200px] right-0 top-[-150px]'
+      className='absolute w-[100px] lg:w-[200px] right-0 top-[-80px]'
       data-aos="fade-up"
       data-aos-duration="1000"
        />

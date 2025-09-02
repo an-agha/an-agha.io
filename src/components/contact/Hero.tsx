@@ -5,11 +5,6 @@ import ContactForm from "./form";
 function Hero() {
   const contact = [
     {
-      icon: 'mi:call',
-      content: '+603 2011 7991',
-      path: 'tel:+603 2011 7991',
-    },
-    {
       icon: 'mdi:internet',
       content: 'https://citech.my',
       path: 'https://citech.my',

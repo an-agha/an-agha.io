@@ -97,7 +97,7 @@ function index() {
     ]
 
     return (
-        <section className='main-container px-10 lg:px-[100px] py-20'
+        <section className='main-container px-10 lg:px-[100px] pt-20'
         id='modules'
         >
             <div className="max-container flex flex-col items-center py-[100px] gap-8">
