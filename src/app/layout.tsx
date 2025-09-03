@@ -34,6 +34,18 @@ export const metadata: Metadata = {
       }
     ],
   },
+  twitter: {
+    title: 'CITECH | Blockchain Sustainability Platform for Construction',
+    description: 'CITECH empowers the construction industry with blockchain technology to achieve sustainability, generate carbon credits, and unlock new revenue streams.',
+    images: [
+      {
+        url: 'https://citech.my/opengraph-image.png',
+        width: 1200,
+        height: 627,
+        alt: 'CITECH',
+      }
+    ],
+  },
 };
 
 export default function RootLayout({
